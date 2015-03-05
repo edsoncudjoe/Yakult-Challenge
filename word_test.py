@@ -12,6 +12,6 @@ stations = [(g.lower()) for g in get_stations]
 
 result = []
 check = set(word)
-results = [s for s in stations if not any(l for check for l in s)]
+results = [s for s in stations if not any(l in check for l in s)]
 
 print results
